@@ -36,7 +36,7 @@ Two main functions are shown as below.
 Here is a snap from the app shows, it is user login page. 
 
 The logo images are removed to avoid intellectual property violations. 
-<img src='login_page.JPG' art='switch' width="600" height="600" />
+<img src='' art='switch' width="600" height="600" />
 
 # 🏗️ ## Using Shiny Modules to simplify complex apps
 > Modules are one of the most powerful tools for building shiny applications in a maintainable and sustainable manner.
