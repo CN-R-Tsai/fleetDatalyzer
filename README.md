@@ -17,11 +17,14 @@ The logo images are removed to avoid intellectual property violations.
 <img src='login_page.JPG' art='switch' />
 
 ## Why R?
-- Provide frontend GUI (Shiny).
--  Framework that allows users to create interactive web apps.
--  Shiny abstracts the key technologies underlying modern web design (HTML, CSS, JavaScript).
-- Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value.
-- I am a shiny lover, proficient in R. 
+1. 第一个列表项
+   -  第一个嵌套列表项
+     - 第二个嵌套列表项
+- Provide frontend GUI (Shiny)
+-  Framework that allows users to create interactive web apps
+-  Shiny abstracts the key technologies underlying modern web design (HTML, CSS, JavaScript)
+- Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value
+- I am a shiny lover, proficient in R 
 
 ##  Overview
 `f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
