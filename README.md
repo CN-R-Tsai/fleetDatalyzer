@@ -2,7 +2,7 @@
 
 👋 Hello there! Thank you for visiting my Github repo. :pray:
 
-> This web apps is aim to help field engineers to figure out the system failure (from hundreds of sensors) on a fleet ( >50+ processing chambers) when issue is happened. The goal is to build a  `Centralized dashboard app` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
+> This web apps is aim to help field engineers to find out the system failure (from hundreds of sensors) on a fleet ( >50+ processing chambers) when issue happened. The ultimate goal is to build a  `Centralized dashboard app` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
 
 ## Technologies Used
 
