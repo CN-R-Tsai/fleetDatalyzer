@@ -24,13 +24,14 @@ Two main functions are shown as below.
 
 | Analytics | Fleet Insight |
 | --- | --- |
-| CSV file upload 
-(Standalone, partial data is extracted from SQLite database) | Fleet traffic |
+| CSV file upload (Standalone[^1]) | Fleet traffic |
 | Reduced dimension plot (Principle Component Analysis, PCA) | Chamber ranking |
 | Data visualization (scatter plot, box plot , etc) | Detail view|
 | Outlier detection (MD, ln. MD) ||
 | Feature importance ranking ||
 | Regression analysis ||
+
+[^1]: Partial data is extracted from SQLite database
 
 Here is a snap from the app shows, it is user login page. 
 
