@@ -11,7 +11,8 @@ The `f-Datalyzer` app is built using,
 - [Shiny](https://shiny.rstudio.com/): Shiny is an R package that makes it easy to build interactive web apps straight from R.
 
 Here is a snap from the app shows, it is 93% confident that the princess is Jasmine. It also marks it with a golden ring.
-<img src='login_page.JPGf' art='switch' />
+> ![login_page.JPG](https://cdn.hashnode.com/res/hashnode/image/upload/v1609042885907/BlS6bjt4g.png)
+<img src='login_page.JPG' art='switch' />
 
 ## Why R?
 - Provide frontend GUI (Shiny).
