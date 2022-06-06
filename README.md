@@ -43,11 +43,11 @@ It is designed as two main dashboards as shown below.
 
 ## 🏗️ Using Shiny Modules to simplify complex apps
 > Modules are one of the most powerful tools for building shiny applications in a maintainable and sustainable manner.
-- Compose complex apps out of smaller, more understandable pieces
+- Compose complex apps out of smaller, more understandable pieces.
 - The app is divided up into pieces and each piece has a name. Naming the pieces means that the names of the controls can be simpler. ← namespacing
-- Organize code into logical and easy-to-understand components
-- Reuse code is possible
-- Module is black box(input & output). It simplifier the structure to the whole app (no more Spaghetti code)
+- Organize code into logical and easy-to-understand components.
+- Reuse code is possible.
+- Module is black box (input & output). It simplifier the structure to the whole app (no more Spaghetti code).
 - Facilitates collaboration! 👍
 
 ## Directory Structure
