@@ -14,7 +14,7 @@ The `f-Datalyzer` app is built using,
 Here is a snap from the app shows, it is user login page. 
 
 The logo images are removed to avoid intellectual property violations. 
-<img src='login_page.JPG' art='switch' width="200" height="400" />
+<img src='login_page.JPG' art='switch' width="600" height="600" />
 
 
 ## Why R?
