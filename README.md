@@ -24,7 +24,8 @@ Two main functions are shown as below.
 
 | Analytics | Fleet Insight |
 | --- | --- |
-| CSV file upload (Standalone, partial data is extracted from SQLite database) | Fleet traffic |
+| CSV file upload 
+(Standalone, partial data is extracted from SQLite database) | Fleet traffic |
 | Reduced dimension plot (Principle Component Analysis, PCA) | Chamber ranking |
 | Data visualization (scatter plot, box plot , etc) | Detail view|
 | Outlier detection (MD, ln. MD) ||
