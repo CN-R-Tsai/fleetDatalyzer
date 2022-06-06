@@ -14,6 +14,6 @@ Here is a snap from the app shows, it is 93% confident that the princess is Jasm
 ##  Analytics
 `f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
 
-Analytics Tab 🔗
+## Analytics Tab 🔗
 
-Fleet Insight Tab 🔗
+## Fleet Insight Tab 🔗
