@@ -14,7 +14,7 @@
 - Provide frontend GUI (Shiny)
    -  Framework that allows users to create interactive web apps
      - Shiny abstracts the key technologies underlying modern web design (HTML, CSS, JavaScript)
-- Tons of packages(ggplot2, tidyverse, etc.) are available & well-maintained  
+- Tons of packages (ggplot2, tidyverse, etc.) are available & well-maintained  
 - Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value
 - I am a shiny lover :heartpulse:, proficient in R 
 
