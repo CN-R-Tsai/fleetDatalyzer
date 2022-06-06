@@ -37,8 +37,18 @@ myapp
 ```
 
 
-##  Analytics
+##  Overview
 `f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
+Two main functions are shown as below. 
+
+| Analytics | Fleet Insight |
+| --- | --- |
+| CSV file upload(Standalone) | `Fleet traffic` |
+| `Reduced dimension plot (Principle Component Analysis, PCA)` | Chamber ranking |
+| Data visualization (scatter plot, box plot , etc) | Detail view|
+| `Outlier detection (MD, ln. MD)` ||
+| `Feature importance ranking ` ||
+| Regression analysis ||
 
 ## Analytics Tab 🔗
 
