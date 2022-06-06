@@ -23,6 +23,7 @@ The logo images are removed to avoid intellectual property violations.
 - I am a shiny lover, proficient in R. 
 
 
+
 ## Directory Structure
 
 ```
@@ -37,17 +38,30 @@ myapp
 ```
 
 
+
+
+## Modularizing Shiny app code
+- Compose complex apps out of smaller, more understandable pieces
+- The app is divided up into pieces and each piece has a name. Naming the pieces means that the names of the controls can be simpler. ← namespacing
+Organize code into logical and easy-to-understand components
+- Reuse code is possible
+- Module is black box(input & output).  It  simplifier the structure to the whole app (no more Spaghetti code)
+- Facilitates collaboration!👍
+
+Modules are one of the most powerful tools for building shiny applications in a maintainable and sustainable manner.
+
+
 ##  Overview
 `f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
 Two main functions are shown as below. 
 
 | Analytics | Fleet Insight |
 | --- | --- |
-| CSV file upload(Standalone) | `Fleet traffic` |
-| `Reduced dimension plot (Principle Component Analysis, PCA)` | Chamber ranking |
+| CSV file upload(Standalone) | Fleet traffic |
+| Reduced dimension plot (Principle Component Analysis, PCA) | Chamber ranking |
 | Data visualization (scatter plot, box plot , etc) | Detail view|
-| `Outlier detection (MD, ln. MD)` ||
-| `Feature importance ranking ` ||
+| Outlier detection (MD, ln. MD) ||
+| Feature importance ranking ||
 | Regression analysis ||
 
 ## Analytics Tab 🔗
