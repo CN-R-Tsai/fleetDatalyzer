@@ -90,7 +90,7 @@ body <- dashboardBody(
   tabItems(
     tabItem(tabName = "analysisTab", Analytics_UI(id = "analytics_1")),
     tabItem(tabName = "fleetinsightTab", fleet_insight_UI(id = "fleet_insight_UI_1")),
-    tabItem(tabName = "robotArmTab", robot_arm_tracking_UI(id = "robotArmTracking")),
+    # tabItem(tabName = "robotArmTab", robot_arm_tracking_UI(id = "robotArmTracking")),
     tabItem(tabName = "quicktraceTab", h1("quicktraceTab")),
     tabItem(tabName = "userUpTab", h1("userUpTab")),
     tabItem(tabName = "aboutTab", About_UI(id = "About_UI_1"))

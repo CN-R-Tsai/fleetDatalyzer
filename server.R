@@ -314,10 +314,10 @@ server <- function(input, output, session) {
   ## Module: robot_arm_tracking_UI          ### +
   ##     id call = "About_UI_1"             ### +
   ############################################# +
-  {
-    callModule(module = show_robotArm_tracking, id = "robotArmTracking")
-  }
-  
+  # {
+  #   callModule(module = show_robotArm_tracking, id = "robotArmTracking")
+  # }
+
   
   ############################################# +
   ## Module: dataSize_info_UI               ### +
