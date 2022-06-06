@@ -1,5 +1,19 @@
 # f-Datalyzer Web App V2
 
-> This web apps is designed for monitoring the fleet status.
+👋 Hello there! 
+> The app is called, `f-Datalyzer`. 
 
-Web apps is developed by R-shiny.
+## Technologies Used
+
+The `f-Datalyzer` app is built using,
+
+- [Shiny](https://shiny.rstudio.com/): Shiny is an R package that makes it easy to build interactive web apps straight from R.
+
+Here is a snap from the app shows, it is 93% confident that the princess is Jasmine. It also marks it with a golden ring.
+
+##  Analytics
+`f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
+
+Analytics Tab 🔗
+
+Fleet Insight Tab 🔗
