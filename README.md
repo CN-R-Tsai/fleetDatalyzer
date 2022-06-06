@@ -1,5 +1,5 @@
 # f-Datalyzer Web App V2 
-* Updated on 06/06/22 *
+*Updated on 06/06/22*
 
 👋 Hello there! Thank you for visiting my Github repo. :pray:
 
