@@ -1,7 +1,7 @@
 # f-Datalyzer Web App V2 
 *Updated on 06/06/22, Author: Chung-nan (Roger) Tsai*
 
-👋 Hello there! Thank you for visiting my Github repo. :pray:
+👋 Hello there! Thank you for taking the time to visit my Github repo. :pray:
 
 > This web apps is aim to help field engineers to find out the system failure (from hundreds of sensors) on a fleet ( > 60+ processing chambers) when issue happened. To speed up the Root Cause Analysis and Corrective Action (RCCA). The ultimate goal is to build a `centralized dashboard app` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
 
