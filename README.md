@@ -1,4 +1,5 @@
 # f-Datalyzer Web App V2
+* *Updated on 06/06/22
 
 👋 Hello there! Thank you for visiting my Github repo. :pray:
 
@@ -66,3 +67,5 @@ myapp
 
 ## Fleet Insight Tab 🔗
 <img src='tool_productivity_ranking.gif' art='switch' />
+
+
