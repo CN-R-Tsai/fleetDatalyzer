@@ -22,6 +22,19 @@ The logo images are removed to avoid intellectual property violations.
 - I am a shiny lover, proficient in R. 
 
 
+## Directory Structure
+
+```
+myapp                         
+    └── i18n
+        └── en.js
+        └── es.js
+        └── de.js
+        └── fr.js
+        └── index.js                
+    └── node_modules                    
+```
+
 
 ##  Analytics
 `f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
