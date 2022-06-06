@@ -1,6 +1,6 @@
 # f-Datalyzer Web App V2
 
-👋 Hello there! 
+👋 Hello there! Thank you for visiting my Github repo :pray:
 > The app is called, `f-Datalyzer`. 
 
 ## Technologies Used
