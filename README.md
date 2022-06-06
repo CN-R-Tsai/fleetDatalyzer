@@ -2,7 +2,7 @@
 
 👋 Hello there! Thank you for visiting my Github repo. :pray:
 
-> This web apps is aim to help field engineers to find out the system failure (from hundreds of sensors) on a fleet ( > 60+ processing chambers) when issue happened. The ultimate goal is to build a  `Centralized dashboard app` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
+> This web apps is aim to help field engineers to find out the system failure (from hundreds of sensors) on a fleet ( > 60+ processing chambers) when issue happened. To speed up the Root Cause Analysis and Corrective Action (RCCA). The ultimate goal is to build a  `Centralized dashboard app` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
 
 ## Technologies Used
 
@@ -22,7 +22,21 @@ The logo images are removed to avoid intellectual property violations.
 - Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value.
 - I am a shiny lover, proficient in R. 
 
-## Using Shiny Modules to simplify building complex apps
+##  Overview
+`f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
+Two main functions are shown as below. 
+
+| Analytics | Fleet Insight |
+| --- | --- |
+| CSV file upload(Standalone) | Fleet traffic |
+| Reduced dimension plot (Principle Component Analysis, PCA) | Chamber ranking |
+| Data visualization (scatter plot, box plot , etc) | Detail view|
+| Outlier detection (MD, ln. MD) ||
+| Feature importance ranking ||
+| Regression analysis ||
+
+
+## Using Shiny Modules to simplify complex apps
 - Compose complex apps out of smaller, more understandable pieces
 - The app is divided up into pieces and each piece has a name. Naming the pieces means that the names of the controls can be simpler. ← namespacing
 Organize code into logical and easy-to-understand components
@@ -30,7 +44,6 @@ Organize code into logical and easy-to-understand components
 - Module is black box(input & output).  It  simplifier the structure to the whole app (no more Spaghetti code)
 - Facilitates collaboration!👍
 Modules are one of the most powerful tools for building shiny applications in a maintainable and sustainable manner.
-
 
 
 ## Directory Structure
@@ -48,19 +61,6 @@ myapp
 
 
 
-
-##  Overview
-`f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
-Two main functions are shown as below. 
-
-| Analytics | Fleet Insight |
-| --- | --- |
-| CSV file upload(Standalone) | Fleet traffic |
-| Reduced dimension plot (Principle Component Analysis, PCA) | Chamber ranking |
-| Data visualization (scatter plot, box plot , etc) | Detail view|
-| Outlier detection (MD, ln. MD) ||
-| Feature importance ranking ||
-| Regression analysis ||
 
 ## Analytics Tab 🔗
 
