@@ -9,7 +9,7 @@
 >The `f-Datalyzer` app is built using,
 
 - [Shiny](https://shiny.rstudio.com/): Shiny is an R package to build interactive web apps, running upon on R programming.
-- [HTML/CSS]
+- HTML/CSS
 
 ## Why R/Shiny?
 - Provide frontend GUI (Shiny)
