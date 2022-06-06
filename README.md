@@ -34,9 +34,8 @@ Two main functions are shown as below.
 
 [^1]: Partial data is extracted from SQLite database
 
-Here is a snap from the app shows, it is user login page. 
-
-The logo images are removed to avoid intellectual property violations. 
+Here is a snap from the app shows, it is user login page[^2]. 
+[^2]: The logo images are removed to avoid intellectual property violations. 
 <img src='login_page.gif' art='switch' width="600" height="600" />
 
 # 🏗️ ## Using Shiny Modules to simplify complex apps
