@@ -11,12 +11,6 @@ The `f-Datalyzer` app is built using,
 
 - [Shiny](https://shiny.rstudio.com/): Shiny is an R package that makes it easy to build interactive web apps straight from R.
 
-Here is a snap from the app shows, it is user login page. 
-
-The logo images are removed to avoid intellectual property violations. 
-<img src='login_page.JPG' art='switch' width="600" height="600" />
-
-
 ## Why R?
 1. Provide frontend GUI (Shiny)
    -  Framework that allows users to create interactive web apps
@@ -37,6 +31,10 @@ Two main functions are shown as below.
 | Feature importance ranking ||
 | Regression analysis ||
 
+Here is a snap from the app shows, it is user login page. 
+
+The logo images are removed to avoid intellectual property violations. 
+<img src='login_page.JPG' art='switch' width="600" height="600" />
 
 ## Using Shiny Modules to simplify complex apps
 - Compose complex apps out of smaller, more understandable pieces
