@@ -14,14 +14,15 @@ The `f-Datalyzer` app is built using,
 Here is a snap from the app shows, it is user login page. 
 
 The logo images are removed to avoid intellectual property violations. 
-<img src='login_page.JPG' art='switch' />
+<img src='login_page.JPG' art='switch' width="200" height="400" />
+
 
 ## Why R?
 1. Provide frontend GUI (Shiny)
    -  Framework that allows users to create interactive web apps
      - Shiny abstracts the key technologies underlying modern web design (HTML, CSS, JavaScript)
-2 Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value
-3 I am a shiny lover, proficient in R 
+2. Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value
+3. I am a shiny lover, proficient in R 
 
 ##  Overview
 `f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
