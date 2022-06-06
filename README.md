@@ -18,8 +18,8 @@ The logo images are removed to avoid intellectual property violations.
 
 ## Why R?
 - Provide frontend GUI (Shiny).
-  -Framework that allows users to create interactive web apps.
-  -Shiny abstracts the key technologies underlying modern web design (HTML, CSS, JavaScript).
+-  Framework that allows users to create interactive web apps.
+-  Shiny abstracts the key technologies underlying modern web design (HTML, CSS, JavaScript).
 - Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value.
 - I am a shiny lover, proficient in R. 
 
@@ -29,7 +29,7 @@ Two main functions are shown as below.
 
 | Analytics | Fleet Insight |
 | --- | --- |
-| CSV file upload(Standalone) | Fleet traffic |
+| CSV file upload (Standalone) | Fleet traffic |
 | Reduced dimension plot (Principle Component Analysis, PCA) | Chamber ranking |
 | Data visualization (scatter plot, box plot , etc) | Detail view|
 | Outlier detection (MD, ln. MD) ||
