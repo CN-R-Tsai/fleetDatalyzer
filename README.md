@@ -5,6 +5,11 @@
 
 > This web apps is aim to help field engineers to quickly understand what cause the system failure (from hundreds of sensors/process steps) on a fleet ( > 60+ processing chambers) when issue happened. To speed up the Root Cause Analysis and Corrective Action (RCCA). The ultimate goal is to build a `centralized dashboard application` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
 
+Here is a snap from the app shows, it is user login page[^1]. 
+[^1]: The logo images are removed to avoid intellectual property violations. 
+<img src='login_page.gif' art='switch' width="500" height="500" />
+
+
 ## Technologies Used
 >The `f-Datalyzer` app is built using,
 
@@ -12,6 +17,7 @@
 - HTML/CSS
 
 ## Why R/Shiny?
+- Do the job and delivery business value
 - Provide frontend GUI (Shiny)
    -  Framework that allows users to create interactive web apps
      - Shiny abstracts the key technologies underlying modern web design (HTML, CSS, JavaScript)
@@ -20,23 +26,20 @@
 - I am a shiny lover :heartpulse:, proficient in R 
 
 ## Apps Overview
->`f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
-Two main functions are shown as below. 
+>`f-Datalyzer` provides useful analytics to improve fleet productivity. Besides, machine learning methods are implemented for anomaly detection in time-series sensor data to predict system failures.
 
+It is designed as two main dashboards as shown below. 
 | Analytics | Fleet Insight |
 | --- | --- |
-| CSV file upload (Standalone[^1]) | Fleet traffic |
+| CSV file upload (Standalone[^2]) | Fleet traffic |
 | Reduced dimension plot (Principle Component Analysis, PCA) | Chamber ranking |
 | Data visualization (scatter plot, box plot , etc) | Detail view|
 | Outlier detection (MD, ln. MD) ||
 | Feature importance ranking ||
 | Regression analysis ||
 
-[^1]: Partial data is extracted from SQLite database
+[^2]: Partial data is extracted from SQLite database
 
-Here is a snap from the app shows, it is user login page[^2]. 
-[^2]: The logo images are removed to avoid intellectual property violations. 
-<img src='login_page.gif' art='switch' width="600" height="600" />
 
 # 🏗️ ## Using Shiny Modules to simplify complex apps
 > Modules are one of the most powerful tools for building shiny applications in a maintainable and sustainable manner.
