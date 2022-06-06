@@ -41,7 +41,7 @@ It is designed as two main dashboards as shown below.
 [^2]: Partial data is extracted from SQLite database
 
 
-# 🏗️ ## Using Shiny Modules to simplify complex apps
+## 🏗️ Using Shiny Modules to simplify complex apps
 > Modules are one of the most powerful tools for building shiny applications in a maintainable and sustainable manner.
 - Compose complex apps out of smaller, more understandable pieces
 - The app is divided up into pieces and each piece has a name. Naming the pieces means that the names of the controls can be simpler. ← namespacing
