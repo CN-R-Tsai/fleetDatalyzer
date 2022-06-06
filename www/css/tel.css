@@ -1,0 +1,118 @@
+
+/* 
+TEL_color = {
+    'Gray':'#2d2d2d',
+    'Cyan':'#00a9e0',
+    'Green':'#78be20',
+    'Magenta':'#da1883',
+    'Purple':'#8031a7',
+    'Turquoize':'#00b2a9',
+    'Yellow':'#eeda00',
+    'Orange':'#ff6a13'
+    }
+*/
+.h2 {
+color: #78be20;
+text-align: center;
+font-family: Roboto, Comic Sans MS, Arial;
+font-size: 26px;
+font-weight: normal;
+letter-spacing: 0.03em;
+border-radius: 5px;
+display: table; /* keep the background color wrapped tight */
+margin: 0px auto 0px auto; /* keep the table centered */
+padding:5px;
+border: solid;
+border-width: 2px;
+border-color: #00a9e0;
+background-color: white;
+}
+
+
+.h4 {
+color: #00a9e0;
+font-family: Roboto, Comic Sans MS, Arial;
+font-size: 20 px;
+font-weight: bold;
+}
+
+
+
+
+/* logo */
+.skin-blue .main-header .logo {
+  background-color: #fff;
+}
+
+/* logo when hovered */
+.skin-blue .main-header .logo:hover {
+  background-color: #78BE20;
+}
+
+/* navbar (rest of the header) */
+.skin-blue .main-header .navbar {
+  background-color: #78BE20;
+}        
+
+/* main sidebar */
+.skin-blue .main-sidebar {
+  background-color: #fff;
+}
+
+/* active selected tab in the sidebarmenu */
+.skin-blue .main-sidebar .sidebar .sidebar-menu .active a{
+  background-color: #fff;
+}
+
+/* other links in the sidebarmenu */
+.skin-blue .main-sidebar .sidebar .sidebar-menu a{
+  background-color: #fff;
+    color: #000000;
+}
+
+/* other links in the sidebarmenu when hovered */
+.skin-blue .main-sidebar .sidebar .sidebar-menu a:hover{
+  background-color: #00A9E0;
+}
+
+/* toggle button when hovered  */                    
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+  background-color: #00A9E0;
+}
+
+
+
+
+
+/* Header color for Module : Feature selection  */    
+
+.box.box-solid.box-danger>.box-header {
+  color:#fff;
+  background:#00A9E0
+}
+
+
+.box.box-solid.box-danger {
+  border-bottom-color:#00A9E0;
+  border-left-color:#00A9E0;
+  border-right-color:#00A9E0;
+  border-top-color:#00A9E0;
+}
+
+
+.box.box-danger>.box-header {
+  color:#000000;
+  background:#fff
+}
+
+.box.box-danger {
+  border-bottom-color:#00A9E0;
+  border-left-color:#00A9E0;
+  border-right-color:#00A9E0;
+  border-top-color:#00A9E0;
+}
+
+.radioSelect label.radio {
+  font-weight: bold;
+  color: green;
+}
