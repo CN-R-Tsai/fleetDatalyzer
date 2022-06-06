@@ -16,7 +16,7 @@ The `f-Datalyzer` app is built using,
    -  Framework that allows users to create interactive web apps
      - Shiny abstracts the key technologies underlying modern web design (HTML, CSS, JavaScript)
 2. Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value
-3. I am a shiny lover, proficient in R 
+3. I am a shiny lover :heartpulse:, proficient in R 
 
 ##  Overview
 `f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
