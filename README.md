@@ -3,12 +3,13 @@
 
 👋 Hello there! Thank you for taking the time to visit my Github repo. :pray:
 
-> This web apps is aim to help field engineers to find out the system failure (from hundreds of sensors) on a fleet ( > 60+ processing chambers) when issue happened. To speed up the Root Cause Analysis and Corrective Action (RCCA). The ultimate goal is to build a `centralized dashboard app` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
+> This web apps is aim to help field engineer to find out the system failure (from hundreds of sensors) on a fleet ( > 60+ processing chambers) when issue happened. To speed up the Root Cause Analysis and Corrective Action (RCCA). The ultimate goal is to build a `centralized dashboard app` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
 
 ## Technologies Used
 >The `f-Datalyzer` app is built using,
 
 - [Shiny](https://shiny.rstudio.com/): Shiny is an R package to build interactive web apps, running upon on R programming.
+- [HTML/CSS]
 
 ## Why R/Shiny?
 - Provide frontend GUI (Shiny)
