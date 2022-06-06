@@ -36,7 +36,7 @@ Here is a snap from the app shows, it is user login page.
 The logo images are removed to avoid intellectual property violations. 
 <img src='login_page.JPG' art='switch' width="600" height="600" />
 
-## Using Shiny Modules to simplify complex apps
+# 🏗️ ## Using Shiny Modules to simplify complex apps
 - Compose complex apps out of smaller, more understandable pieces
 - The app is divided up into pieces and each piece has a name. Naming the pieces means that the names of the controls can be simpler. ← namespacing
 Organize code into logical and easy-to-understand components
