@@ -18,7 +18,7 @@ The `f-Datalyzer` app is built using,
 2. Save results to database (PostgreSQL, SQLite) and provides a nice dashboard for business to see value
 3. I am a shiny lover :heartpulse:, proficient in R 
 
-##  Overview
+## Apps Overview
 `f-Datalyzer` provides some basic but useful analytics to understand the productivity of tools and process variation.
 Two main functions are shown as below. 
 
