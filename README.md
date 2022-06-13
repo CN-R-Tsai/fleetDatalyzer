@@ -52,8 +52,7 @@ It is designed as two main dashboards as shown below.
 
 
 ## Analytics Tab 🔗
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/youtu.be/fTOhAUpRrNo/0.jpg)](https://youtu.be/fTOhAUpRrNo)
-
+[![catstore](https://img.youtube.com/vi/fTOhAUpRrNo/0.jpg)](https://youtu.be/fTOhAUpRrNo)
 
 ## Fleet Insight Tab 🔗
 <img src='tool_productivity_ranking.gif' art='switch' />
