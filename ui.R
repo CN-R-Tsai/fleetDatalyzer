@@ -2,20 +2,10 @@ cat("\n > Enter in ui. R \n")
 
 rm(list = ls())
 
-## load data
-# data <- read.csv(file = "C:/Users/214667/Desktop/GoodvsBad/SummaryData.csv")
-
-# TEL color: Hex: 00A9E0
-# header <- dashboardHeader(title = "Smart Analytics", titleWidth = 170)
-
-
-
 
 #######################################################################
 ## UI definition. ----
 #######################################################################
-
-
 
 
 # Header Function ==================================
@@ -26,21 +16,18 @@ header <- dashboardHeader(
     href = "https://www.tel.co.jp/",
     tags$img(
       src = "images/", em("f"),"Datalyzer",
-      #src = "images/TEL_tm_rgb_Large.png", em("f"),"Datalyzer",
       style = "vertical-align:middle",
       height = 50, width = 75, align = "left"
     ),
     style = "font-size: 20px; font-family: Roboto;"
-    # tagList(paste0("TEL Data In-Sight v1.0.0"), icon("far fa-chart-bar")), style = "color: black; font-size: 24px"
   ),
   titleWidth = 200,
   dropdownMenuCustom(
     type = "message",
-    
     customSentence = customSentence,
     messageItem(
       from = "s4310036@gmail.com", #' Feedback and suggestions',
-      message =  "", # paste0("chung-nan.tsai@tel.com" ),
+      message =  "", 
       icon = icon("envelope"),
       href = "mailto:s4310036@gmail.com"
     ),
@@ -91,8 +78,8 @@ body <- dashboardBody(
     tabItem(tabName = "analysisTab", Analytics_UI(id = "analytics_1")),
     tabItem(tabName = "fleetinsightTab", fleet_insight_UI(id = "fleet_insight_UI_1")),
     # tabItem(tabName = "robotArmTab", robot_arm_tracking_UI(id = "robotArmTracking")),
-    tabItem(tabName = "quicktraceTab", h1("quicktraceTab")),
-    tabItem(tabName = "userUpTab", h1("userUpTab")),
+    #tabItem(tabName = "quicktraceTab", h1("quicktraceTab")),
+    #tabItem(tabName = "userUpTab", h1("userUpTab")),
     tabItem(tabName = "aboutTab", About_UI(id = "About_UI_1"))
   )
   # tabItem(
@@ -240,6 +227,7 @@ body <- dashboardBody(
   #     ),
   #     column(
   #       width = 4,
+  
   #       box(
   #         title = "XGBoost model", width = NULL, collapsible = FALSE, solidHeader = FALSE,
   #         "Box3"
@@ -258,3 +246,4 @@ ui <- dashboardPage( # skin = "black",
   sidebar,
   body
 )
+
