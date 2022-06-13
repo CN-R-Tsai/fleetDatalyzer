@@ -50,23 +50,10 @@ It is designed as two main dashboards as shown below.
 - Module is black box (input & output). It simplifier the structure to the whole app (no more Spaghetti code).
 - Facilitates collaboration! 👍
 
-## Directory Structure
-
-```
-myapp                         
-    └── i18n
-        └── en.js
-        └── es.js
-        └── de.js
-        └── fr.js
-        └── index.js                
-    └── node_modules                    
-```
-
-
-
 
 ## Analytics Tab 🔗
+
+
 
 ## Fleet Insight Tab 🔗
 <img src='tool_productivity_ranking.gif' art='switch' />
