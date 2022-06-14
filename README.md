@@ -58,4 +58,4 @@ It is designed as two main dashboards as shown below.
 
 
 ## Fleet Insight Tab 🔗
-![tool_productivity_ranking](https://user-images.githubusercontent.com/36733953/173472809-f8f47727-4b27-4526-ba7d-05966879e1f0.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/36733953/173473309-68c3c79e-567d-4875-b690-5b9653b89685.gif)
