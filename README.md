@@ -61,3 +61,4 @@ It is designed as two main dashboards as shown below.
 <img src='tool_productivity_ranking.gif' art='switch' />
 
 
+![tool_productivity_ranking](https://user-images.githubusercontent.com/36733953/173472809-f8f47727-4b27-4526-ba7d-05966879e1f0.gif)
