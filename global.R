@@ -124,69 +124,6 @@ get.fleetInfo <- function() {
   })
 }
 
-# -----------------------------------------------------------------------------
-# Use: calculate importance
-# Arguments: fimp0
-# Return: fimp
-# -----------------------------------------------------------------------------
-
-calculate_importance <- function(fimp0) {
-
-  # # default
-  if (class(fimp0)[1] != "data.table") {
-    fimp0 <- data.table(name = names(fimp0), value = fimp0)
-  }
-
-  fimp <- fimp0[value > 0, ]
-
-  if (nrow(fimp) < 1) {
-    stop(paste0("Non-tree model ! \n"))
-  } else {
-    k <- 30
-
-    # Split
-    fimpSplit <- fimp[, c("sensor", "tmp") := tstrsplit(name, "_Step", fixed = TRUE)]
-    if (length(tstrsplit(fimpSplit$tmp, "_", fixed = TRUE)) == 2) {
-      fimpSplit[, c("step", "statistic") := tstrsplit(tmp, "_", fixed = TRUE)]
-    } else {
-      fimpSplit[, c("step", "sub", "statistic") := tstrsplit(tmp, "_", fixed = TRUE)]
-    }
-    fimpSplit[, tmp := NULL]
-
-    # # Importance for Parameter
-    nt <- ifelse(nrow(fimp) > k, k, nrow(fimp))
-    fimp <- fimp[1:nt]
-
-
-    # # Importance for Sensor
-    # tmpSum <- fimpSplit[ , sum(value), by=sensor] %>% setorder(-V1)
-    # nt <- ifelse(nrow(tmpSum)>k, k, nrow(tmpSum))
-    # topSumCol <- tmpSum[1:nt, sensor]
-    # fimp2 <- fimpSplit[sensor %in% topSumCol,]
-    # print(fimp2)
-    #
-    # # Importance for Step
-    # tmpSum <- fimpSplit[ , sum(value), by=step] %>% setorder(-V1)
-    # nt <- ifelse(nrow(tmpSum)>k, k, nrow(tmpSum))
-    # topSumCol <- tmpSum[1:nt, step]
-    # fimp3 <- fimpSplit[step %in% topSumCol,]
-    # print(fimp3)
-    # rm(fimp0, fimp, fimp2, fimp3, fimpSplit, tmpSum)
-
-    fimp <<- fimp
-    # fimp2 <<- fimp2
-    # fimp3 <<- fimp3
-  }
-  return(fimp)
-}
-
-# -----------------------------------------------------------------------------
-# ``- PCA preprocessing----
-# -----------------------------------------------------------------------------
-
-cov3 <- function(x) {
-  1 / (NROW(x) - 1) * crossprod(x)
-}
 
 # -----------------------------------------------------------------------------
 # Use: calculate PCA
@@ -223,59 +160,6 @@ calculate_pca <- function(the_data) {
   ))
 }
 
-# -----------------------------------------------------------------------------
-# Use: calculate mahalanobis
-# Arguments: pca_output
-# Return: md_table(MD, ln.MD)
-# -----------------------------------------------------------------------------
-
-calculate_mahalanobis <- function(pca_output) {
-  xx <- pca_output$x
-  covx <- cov3(xx)
-  ## mahalanobis(x, center, cov, inverted = FALSE, ...)
-  ## Ginv: Calculates the Moore-Penrose generalized inverse of a matrix X.
-  md <- mahalanobis(xx, rep(0, dim(xx)[2]), ginv(covx), inverted = TRUE)
-  md_table <<- as.data.table(cbind(MD = md, ln.MD = log(md)))
-}
-
-# -----------------------------------------------------------------------------
-# Use: auto_rank
-# Arguments: pca_output
-# Return:
-# -----------------------------------------------------------------------------
-
-auto_rank <- function(pca_output) {
-  if (!is.null(pca_output)) {
-    pr <- pca_output
-    pr.var <- pr$sdev^2 #' the standard deviations of the principal components
-    print(pr.var)
-    if (length(pr.var) > 2) {
-      xmax <- 1:length(pr$sdev)
-      skew_value <- skewness(pr.var)
-      print(skew_value)
-      if (skew_value != 0) {
-        angle <- 1 / skewness(pr.var)
-        pr.var.per <- round(pr.var / sum(pr.var) * 100, 1)
-        d1 <- data.frame(pr.var.per, xmax)
-
-        rot_mat <- matrix(c(cos(angle), sin(angle), -sin(angle), cos(angle)), ncol = 2)
-        fidx <- max(2, which.min(((as.matrix(d1) %*% (rot_mat)))[, 1]))
-        print(fidx)
-
-        rank <- fidx
-      } else {
-        pr.var.per <- round(pr.var / sum(pr.var) * 100, 1)
-        fidx <- min(which(cumsum(pr.var / sum(pr.var)) >= 0.75))
-        rank <- fidx
-      }
-      return(rank)
-    } else {
-      return(length(pr.var))
-    }
-  } else {
-    return(NULL)
-  }
-}
 
 # -----------------------------------------------------------------------------
 # Use: create PCA plot
