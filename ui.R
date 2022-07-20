@@ -13,7 +13,7 @@ rm(list = ls())
 
 header <- dashboardHeader(
   title = tags$a(
-    href = "https://www.tel.co.jp/",
+    href = "",
     tags$img(
       src = "images/", em("f"),"Datalyzer",
       style = "vertical-align:middle",
