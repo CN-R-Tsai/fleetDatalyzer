@@ -50,12 +50,3 @@ It is designed as two main dashboards as shown below.
 - Module is black box (input & output). It simplifier the structure to the whole app (no more Spaghetti code).
 - Facilitates collaboration! 👍
 
-
-## Analytics Tab 🔗
-[![analytics1](https://img.youtube.com/vi/1vji-NBg8pk/0.jpg)](https://youtu.be/1vji-NBg8pk)
-[![analytics2](https://img.youtube.com/vi/TIQpS_IwtRI/0.jpg)](https://youtu.be/TIQpS_IwtRI)
-[![analytics3](https://img.youtube.com/vi/fTOhAUpRrNo/0.jpg)](https://youtu.be/fTOhAUpRrNo)
-
-
-## Fleet Insight Tab 🔗
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/36733953/173473309-68c3c79e-567d-4875-b690-5b9653b89685.gif)
