@@ -1,12 +1,12 @@
 #' logInOut_UI
 #' @title logInOut_UI.module
 #' @return logInOut UI
-#' 
+#'
 #' # In UI :
 #' logIn_UI(id = "logIn_module"),
-#' 
+#'
 #' # In Server
-#' validate_password_module <- callModule(module   = validate_pwd, 
+#' validate_password_module <- callModule(module   = validate_pwd,
 #' id = "logIn_module", data = user_base_module_tbl, user_col = username,
 #' pwd_col  = password)
 
@@ -50,13 +50,13 @@ logIn_UI <- function(id, title) {
         width = 4, offset = 4,
         actionButton(
           inputId = ns("logInsignin"),
-          label = "Sign in",
+          label = "Log in",
           width = "100%"
         )
       )),
-      em("f"),HTML("-Datalyzer (v2.0.0)"),
+      em("f"), HTML("-Datalyzer (v2.0.0)"),
       br(),
-      p(em("Developed by Chung-nan (Roger) Tsai"), style = "text-align:center; font-family: times"),
+      p(em("Developed by Chung-nan(Roger) Tsai"), style = "text-align:center; font-family: times"),
       p()
     )
   )
@@ -66,39 +66,48 @@ logIn_UI <- function(id, title) {
 #' logInOut_UI
 #' @title logInOut_UI.module
 #' @return logInOut UI
-#' 
+#'
 #' # In UI :
 #' logIn_UI(id = "logIn_module"),
-#' 
+#'
 #' # In Server
-#' validate_password_module <- callModule(module   = validate_pwd, 
+#' validate_password_module <- callModule(module   = validate_pwd,
 #' id = "logIn_module", data = user_base_module_tbl, user_col = username,
-#' pwd_col  = password)
+#' pwd_col = password)
 
+
+cat("\n > Enter in logInOut_UI module \n")
 
 validate_pwd <- function(input, output, session, data, user_col, pwd_col) {
 
-  
+
   # get user and pwd from data/ user_col/ pwd_col information
-  
+
   user <- data %>% pull({{ user_col }})
 
   pwd <- data %>% pull({{ pwd_col }})
 
-  # check correctness
+
+  #` > check correctness ----
   eventReactive(input$logInsignin, {
-    validate <- FALSE
-
-    if (input$logInusername == user &&
-      input$logInpassword == pwd) {
-      validate <- TRUE
-    }
-
-    # hide login form when user is confirmed
-    if (validate) {
-      shinyjs::hide(id = "logIn")
-    }
-
-    validate
+    validate(
+      need(
+        if (is.null(input$logInusername) || input$logInusername == "" || is.null(input$logInpassword) || input$logInpassword == "") {
+          stop("Username or Password cannot be blank")
+        } else if (input$logInusername != user || input$logInpassword != pwd) {
+          stop("Your username or password is incorrect - please try again.")
+        } else {
+          if (input$logInusername == user &&
+              input$logInpassword == pwd) {
+            validate <- TRUE
+          }
+          # hide login form when user is confirmed
+          if (validate) {
+            shinyjs::hide(id = "logIn")
+          }
+          validate
+        }
+      )
+    )
   })
 }
