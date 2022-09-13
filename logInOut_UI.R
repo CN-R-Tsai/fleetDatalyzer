@@ -80,34 +80,38 @@ cat("\n > Enter in logInOut_UI module \n")
 
 validate_pwd <- function(input, output, session, data, user_col, pwd_col) {
 
-
   # get user and pwd from data/ user_col/ pwd_col information
 
   user <- data %>% pull({{ user_col }})
-
   pwd <- data %>% pull({{ pwd_col }})
 
-
-  #` > check correctness ----
+  # ` > check correctness ----
   eventReactive(input$logInsignin, {
-    validate(
-      need(
-        if (is.null(input$logInusername) || input$logInusername == "" || is.null(input$logInpassword) || input$logInpassword == "") {
-          stop("Username or Password cannot be blank")
-        } else if (input$logInusername != user || input$logInpassword != pwd) {
-          stop("Your username or password is incorrect - please try again.")
-        } else {
-          if (input$logInusername == user &&
-              input$logInpassword == pwd) {
-            validate <- TRUE
-          }
-          # hide login form when user is confirmed
-          if (validate) {
-            shinyjs::hide(id = "logIn")
-          }
-          validate
-        }
-      )
-    )
+    if (is.null(input$logInusername) || input$logInusername == "" || is.null(input$logInpassword) || input$logInpassword == "") {
+      showModal(modalDialog(
+        title = "Important message",
+        "Username or Password cannot be blank",
+        easyClose = TRUE
+      ))
+      # showNotification("Username or Password cannot be blank")
+    } else if (input$logInusername != user || input$logInpassword != pwd) {
+      showModal(modalDialog(
+        title = "Important message",
+        "Your username or password is incorrect - please try again.",
+        easyClose = TRUE
+      ))
+      # showNotification("Your username or password is incorrect - please try again.")
+    } else {
+      if (input$logInusername == user &&
+        input$logInpassword == pwd) {
+        validate <- TRUE
+        
+      }
+      # hide login form when user is confirmed
+      if (validate) {
+        shinyjs::hide(id = "logIn")
+      }
+      validate
+    }
   })
 }
