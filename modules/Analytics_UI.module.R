@@ -1,21 +1,20 @@
 #' Analytics_UI
-#' @title Analytics_UI.module
-#' @return UI page
+#' @title Analytics_UI.R
+#' @return Analytics_UI
+#' 
 #' # In UI :
-#' load_CSVdataUI(id = "mod1")
+#' Analytics_UI(id = "analyticsUI")
+#' 
 #' # In Server
-#' data_mod1 <- callModule(module = load_data, id = "mod1")
-#' }
+#' callModule(module = show_Analytics, id = "analyticsUI")
+
 
 Analytics_UI <- function(id) {
   ns <- NS(id)
   
   tabItem(
     tabName = "analysisTab",
-    br(),
-    br(),
-    br(),
-    h2(class = "h2", "Turning data into actionable insights", emo::ji("search"),"and insights into predictions!"),
+    h2(class = "h2Title", "Turning data into actionable insights", emo::ji("search"),"and insights into predictions!"),
     br(),
     br(),
     br(),
@@ -168,15 +167,17 @@ Analytics_UI <- function(id) {
 
 
 #' Analytics_UI
-#' @title Analytics_UI.module
-#' @return UI page
+#' @title Analytics_UI.R
+#' @return Analytics_UI
+#' 
 #' # In UI :
-#' load_CSVdataUI(id = "mod1")
+#' Analytics_UI(id = "analyticsUI")
+#' 
 #' # In Server
-#' data_mod1 <- callModule(module = load_data, id = "mod1")
-#' }
+#' callModule(module = show_Analytics, id = "analyticsUI")
 
 show_Analytics <- function(input, output, session) {
+  
   ns <- session$ns
   
   cat("\n > Enter in Analytics_UI module \n")
