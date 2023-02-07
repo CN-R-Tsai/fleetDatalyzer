@@ -6,7 +6,7 @@
 > This web apps is aim to help field engineers to quickly understand what cause the system failure (from hundreds of sensors/process steps) on a fleet ( > 60+ processing chambers) when issue happened. To speed up the Root Cause Analysis and Corrective Action (RCCA). The ultimate goal is to build a `centralized dashboard application` which can providing information and comprehensive insights of data analysis. The app is called, `f-Datalyzer`. 
 
 Here is a snap from the app shows, it is user login page[^1]. 
-[^1]: The logo images are removed to avoid intellectual property violations. 
+[^1]: The logo images were removed due to intellectual property. 
 <img src='login_page.gif' art='switch' width="500" height="500" />
 
 
@@ -50,4 +50,5 @@ It is designed as two main dashboards as shown below.
 - Module is black box (input & output). It simplifier the structure to the whole app (no more Spaghetti code).
 - Facilitates collaboration! 👍
 
-<img src='tool_productivity_ranking.gif' art='switch' width="500" height="500" />
+## Fleet Insight Demo
+<img src='tool_productivity_ranking.gif' art='switch' width="500" height="400" />
