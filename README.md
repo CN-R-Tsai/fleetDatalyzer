@@ -50,3 +50,4 @@ It is designed as two main dashboards as shown below.
 - Module is black box (input & output). It simplifier the structure to the whole app (no more Spaghetti code).
 - Facilitates collaboration! 👍
 
+<img src='tool_productivity_ranking.gif' art='switch' width="500" height="500" />
