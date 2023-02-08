@@ -12,7 +12,7 @@ System failures and process variation are able to quickly identify from hundreds
 ## Application Overview
 `f-Datalyzer` provides useful analytics to improve fleet productivity. Besides, machine learning methods are implemented for anomaly detection in time-series sensor data to predict system failures.
 
-It is designed as two main dashboards as shown below. 
+Two main dashboards with features are developed as shown below. 
 | Analytics | Fleet Insight |
 | --- | --- |
 | CSV file upload | Fleet traffic |
@@ -41,7 +41,7 @@ The `f-Datalyzer` app is built using,
 
 - Docker
 
-[^1]:(https://shiny.rstudio.com/): Shiny is an R package to build interactive web apps, running upon on R programming.
+[^1]: (https://shiny.rstudio.com/): Shiny is one of famous R package to build interactive web apps, running upon on R programming.
 
 ## Why R/Shiny?
 - Do the job and delivery business value
